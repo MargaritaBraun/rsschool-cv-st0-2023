@@ -21,3 +21,30 @@
 +    Cinema 4D
 +    Corel
 * I can create websites on a local Open Server using Joomla, WordPress. She studied graphic programs Photoshop, Corel and others.**
+
+* ### Education: 
+
+
+Arts and crafts, artist. Well, more of an actress. I really like being in art.
+
+
+JSFEPRESCHOOL2022Q4
+
+
+```
+const accordionTitles = document.querySelectorAll(".pricesButton");
+
+accordionTitles.forEach((accordionTitle) => {
+  accordionTitle.addEventListener("click", () => {
+    if (accordionTitle.classList.contains("active")) {
+      accordionTitle.classList.remove("active");
+    } else {
+      const accordionTitlesWithIsOpen = document.querySelectorAll(".active");
+      accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
+        accordionTitleWithIsOpen.classList.remove("active");
+      });
+      accordionTitle.classList.add("active");
+    }
+  });
+});
+```
