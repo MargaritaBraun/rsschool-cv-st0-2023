@@ -48,3 +48,13 @@ accordionTitles.forEach((accordionTitle) => {
   });
 });
 ```
+* ### English B1
+
+
+* ### Experience of educational projects
+
+
++   Maket site **JSFEPRESCHOOL2022Q4**
++    [Plants](https://rolling-scopes-school.github.io/margaritabraun-JSFEPRESCHOOL2022Q4/)
++    [Assets Point](https://margaritabraun.github.io/Project-Access-Point/index.html)
+
