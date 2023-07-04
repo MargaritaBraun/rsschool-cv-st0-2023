@@ -12,16 +12,31 @@
     <wrapper class="wrapper">
     <header class="header">
         <nav>
-            <ul>
-                <li>
-                    <a>contacts</a>
+            <ul class="menu-container">
+                <li class="menu-item">
+                    <a class="item">About me</a>
+                </li>
+                <li class="menu-item">
+                    <a class="item">Contacts</a>
+                </li>
+                <li class="menu-item">
+                    <a class="item">Skills</a>
+                </li>
+                <li class="menu-item">
+                    <a class="item">Code</a>
+                </li>
+                <li class="menu-item">
+                    <a class="item">My projects</a>
+                </li>
+                <li class="menu-item">
+                    <a class="item">Education</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="basic">
-            <div class="title">
+            <div class="name">
                 <div class="block -right">
                     <img class="background" src="images/foto.jpg" alt="Marharyta Parkalava">
                 </div>
@@ -29,19 +44,71 @@
                     <h1>Marharyta Parkalava</h1>
                     <h3>Web-developer</h3>
                 </div>
-            </div>
-            
+            </div> 
         </section>
         <aside class="aside">
-            <div class="custom">
-                
-                
-            </div>
-            
-            <h2>Contacts</h2>
-            <ul>
-                <li>discord</li>
+            <h2 class="title">Contacts</h2>
+            <ul class="contacts-container">
+                <li class="aside-item">
+                    <a class="item" href="https://discordapp.com/users/1049089822511333478/">Discord</a>
+                    <p class="item-text">marharyta_parkalava</p>
+                </li>
+                <li class="aside-item">
+                    <a class="item" href="mailto:margobraun777@gmail.com">Email</a>
+                    <p class="item-text">margobraun777@gmail.com</p>
+                </li>
+                <li class="aside-item">
+                    <a class="item" href="https://vk.com/id176668841">Vkontakte</a>
+                </li>
+                <li class="aside-item">
+                    <a class="item" href="https://www.instagram.com/rita_braun/?hl=ru">Instagram</a>
+                </li>
             </ul>
+            <h2 class="title">Education</h2>
+            <ul class="education-container">
+                <li class="aside-item education">Belarusian State University of Culture and Arts</li>
+                <li class="aside-item education">Gomel State Vocational and Technical College of Folk Arts and Crafts</li>
+            </ul>
+            <h2 class="title">Skills</h2>
+                <ul class="skills-list">
+                    <li class="aside-item">Html</li>
+                    <li class="aside-item">CSS</li>
+                    <li class="aside-item">WordPress</li>
+                    <li class="aside-item">Joomla</li>
+                    <li class="aside-item">Cinema 4D</li>
+                    <li class="aside-item">CorelDRAW</li>
+                </ul>
+            <h2 class="title">Foreign languages</h2>
+            <p class="languages">English B1</p>
+        </aside>
+        <section class="information">
+            <article class="about-container">
+                <h2 class="title">About me</h2>
+                <p class="text">I am studying at the Belarusian State University of Culture and Arts by correspondence.
+                     My specialization is "Computer technology in Art". I like to combine computer technology and art, 
+                     so now I am studying at RS School and taking a course in JS\Frontend development.
+                     The preparatory stage is a new and interesting experience for me.</p>
+            </article>
+            <article class="code">
+                <h2 class="title">Code</h2>
+                <Code>
+                    const accordionTitles = document.querySelectorAll(".pricesButton");
+
+accordionTitles.forEach((accordionTitle) => {
+  accordionTitle.addEventListener("click", () => {
+    if (accordionTitle.classList.contains("active")) {
+      accordionTitle.classList.remove("active");
+    } else {
+      const accordionTitlesWithIsOpen = document.querySelectorAll(".active");
+      accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
+        accordionTitleWithIsOpen.classList.remove("active");
+      });
+      accordionTitle.classList.add("active");
+    }
+  });
+});
+                </Code>
+            </article>
         </section>
         <footer class="footer">
 
