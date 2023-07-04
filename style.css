@@ -5,6 +5,7 @@ ul, li {
 
 a {
     text-decoration:none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 10px;
     color: aliceblue;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -24,6 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 h1 {
@@ -32,6 +36,7 @@ h1 {
 
 h3 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .header {
@@ -124,7 +129,7 @@ h3 {
 }
 
 .aside-item {
-    padding: 10px;
+    padding: 10px 0 10px 30px;
 }
 
 .aside-item::before {
@@ -133,10 +138,13 @@ h3 {
     font-size: 2.7rem;
     display: inline-block; /* Расстояние между точкой и текстом */
     width: 1.5rem; /* Задать значение расстояния */
+    position: relative;
+    top: 5px;
 }
 
 .item-text {
     font-size: 1.4rem;
+    margin: 5px 0 5px 0;
 }
 
 .education {
@@ -145,7 +153,8 @@ h3 {
 }
 
 .information {
-    flex: 0 0 60vw;
+    flex: 0 1 60vw;
+    padding: 10px 20px;
 }
 
 .text {
@@ -157,6 +166,7 @@ h3 {
 .languages {
     font-size: 2rem;
     padding: 10px;
+    text-align: center;
 }
 
 .code-container {
@@ -168,24 +178,42 @@ h3 {
 
 .projects {
     font-size: 3rem;
+    text-align: center;
 }
 
 .projects-link {
     font-size: 3rem;
+    display: block;
+}
+
+.img-icon {
+    width: 18%;
+    display: block;
+    margin: auto;
 }
 .footer {
-    background-color: rgb(255, 217, 0);
-    width: 100%;
-    height: 50px;
     display: flex;
+    background-color: rgb(255, 217, 0);
+    width: 100vw;
+    justify-content: center;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-item {
     font-size: 3rem;
+    padding: 10px;
 }
 
 .rss {
-    width: 30%;
+    width: 100%;
     cursor: url(images/cursor.png), pointer;
     /*height: 30px;*/
+}
+
+.icon-rss {
+    width: 80px;
 }
