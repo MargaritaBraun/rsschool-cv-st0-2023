@@ -3,6 +3,10 @@ ul, li {
     padding: 0;
 }
 
+a {
+    text-decoration:none;
+}
+
 body {
     background-color: orangered;
     box-sizing: border-box;
@@ -49,10 +53,12 @@ h3 {
 
 .item {
     padding: 10px;
-    color: aliceblue;
     font-size: 2rem;
-    text-decoration:none;
+}
+
+.link {
     cursor: url(images/cursor.png), pointer;
+    color: aliceblue;
 }
 
 .basic {
@@ -145,6 +151,7 @@ h3 {
 .text {
     font-size: 2rem;
     padding: 10px;
+    text-align: justify;
 }
 
 .languages {
@@ -152,8 +159,33 @@ h3 {
     padding: 10px;
 }
 
+.code-container {
+    padding: 10px;
+}
+.code {
+    font-size: 1.1rem;
+}
+
+.projects {
+    font-size: 3rem;
+}
+
+.projects-link {
+    font-size: 3rem;
+}
 .footer {
     background-color: rgb(255, 217, 0);
     width: 100%;
     height: 50px;
+    display: flex;
+}
+
+.footer-item {
+    font-size: 3rem;
+}
+
+.rss {
+    width: 30%;
+    cursor: url(images/cursor.png), pointer;
+    /*height: 30px;*/
 }

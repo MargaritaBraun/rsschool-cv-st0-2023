@@ -14,22 +14,22 @@
         <nav>
             <ul class="menu-container">
                 <li class="menu-item">
-                    <a class="item">About me</a>
+                    <a class="link item">About me</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item">Contacts</a>
+                    <a class="link item">Contacts</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item">Skills</a>
+                    <a class="link item">Skills</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item">Code</a>
+                    <a class="link item">Code</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item">My projects</a>
+                    <a class="link item">My projects</a>
                 </li>
                 <li class="menu-item">
-                    <a class="item">Education</a>
+                    <a class="link item">Education</a>
                 </li>
             </ul>
         </nav>
@@ -50,18 +50,18 @@
             <h2 class="title">Contacts</h2>
             <ul class="contacts-container">
                 <li class="aside-item">
-                    <a class="item" href="https://discordapp.com/users/1049089822511333478/">Discord</a>
+                    <a class="link item" href="https://discordapp.com/users/1049089822511333478/">Discord</a>
                     <p class="item-text">marharyta_parkalava</p>
                 </li>
                 <li class="aside-item">
-                    <a class="item" href="mailto:margobraun777@gmail.com">Email</a>
+                    <a class="link item" href="mailto:margobraun777@gmail.com">Email</a>
                     <p class="item-text">margobraun777@gmail.com</p>
                 </li>
                 <li class="aside-item">
-                    <a class="item" href="https://vk.com/id176668841">Vkontakte</a>
+                    <a class="link item" href="https://vk.com/id176668841">Vkontakte</a>
                 </li>
                 <li class="aside-item">
-                    <a class="item" href="https://www.instagram.com/rita_braun/?hl=ru">Instagram</a>
+                    <a class="link item" href="https://www.instagram.com/rita_braun/?hl=ru">Instagram</a>
                 </li>
             </ul>
             <h2 class="title">Education</h2>
@@ -89,29 +89,48 @@
                      so now I am studying at RS School and taking a course in JS\Frontend development.
                      The preparatory stage is a new and interesting experience for me.</p>
             </article>
-            <article class="code">
+            <article class="code-container">
                 <h2 class="title">Code</h2>
-                <Code>
-                    const accordionTitles = document.querySelectorAll(".pricesButton");
+                <Code class="code">
+                    const accordionTitles = document.querySelectorAll(".pricesButton");<br>
 
-accordionTitles.forEach((accordionTitle) => {
-  accordionTitle.addEventListener("click", () => {
-    if (accordionTitle.classList.contains("active")) {
-      accordionTitle.classList.remove("active");
-    } else {
-      const accordionTitlesWithIsOpen = document.querySelectorAll(".active");
-      accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
-        accordionTitleWithIsOpen.classList.remove("active");
-      });
-      accordionTitle.classList.add("active");
-    }
-  });
-});
+accordionTitles.forEach((accordionTitle) => {<br>
+  accordionTitle.addEventListener("click", () => {<br>
+    if (accordionTitle.classList.contains("active")) {<br>
+      accordionTitle.classList.remove("active");<br>
+    } else {<br>
+      const accordionTitlesWithIsOpen = document.querySelectorAll(".active");<br>
+      accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {<br>
+        accordionTitleWithIsOpen.classList.remove("active");<br>
+      });<br>
+      accordionTitle.classList.add("active");<br>
+    }<br>
+  });<br>
+});<br>
                 </Code>
+            </article>
+            <article class="projects-container">
+                <h2 class="title">My projects</h2>
+                <h3> Maket site JSFEPRESCHOOL2022Q4</h3>
+                <p class="projects">
+                    <a class="link projects-link" href="https://rolling-scopes-school.github.io/margaritabraun-JSFEPRESCHOOL2022Q4/">Plants</a>
+                </p>
+                <p class="projects">
+                    <a class="link projects-link" href="https://margaritabraun.github.io/Project-Access-Point/index.html">Assets Point</a>
+                </p>
             </article>
         </section>
         <footer class="footer">
-
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a class="link" href="https://github.com/MargaritaBraun">GitHub</a>
+                </li>
+                <li class="footer-item">2023</li>
+                <li class="footer-item">
+                    <a class="link" href="https://rs.school/js/">
+                        <img class="rss" src="https://rs.school/images/rs_school_js.svg"></a>
+                    </li>
+            </ul>
         </footer>
     </main>
 </wrapper>
