@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.png" type="image/png">
-    <title>Document</title>
+    <title>RssSchool-CV</title>
 </head>
 <body>
-    <wrapper class="wrapper">
+    <div class="wrapper">
     <header class="header">
         <nav>
             <ul class="menu-container">
@@ -83,8 +83,8 @@
             <p class="languages">English B1</p>
         </aside>
         <section class="information">
+            <h2 class="title" id="about">About me</h2>
             <article class="about-container">
-                <h2 class="title" id="about">About me</h2>
                 <p class="text">I am studying at the Belarusian State University of Culture and Arts by correspondence.
                      My specialization is "Computer technology in Art". I like to combine computer technology and art, 
                      so now I am studying at RS School and taking a course in JS\Frontend development.
@@ -95,30 +95,30 @@
                 <Code class="code">
                     const accordionTitles = document.querySelectorAll(".pricesButton");<br>
 
-accordionTitles.forEach((accordionTitle) => {<br>
-  accordionTitle.addEventListener("click", () => {<br>
-    if (accordionTitle.classList.contains("active")) {<br>
-      accordionTitle.classList.remove("active");<br>
-    } else {<br>
-      const accordionTitlesWithIsOpen = document.querySelectorAll(".active");<br>
-      accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {<br>
-        accordionTitleWithIsOpen.classList.remove("active");<br>
-      });<br>
-      accordionTitle.classList.add("active");<br>
-    }<br>
-  });<br>
-});<br>
+                    accordionTitles.forEach((accordionTitle) => {<br>
+                    accordionTitle.addEventListener("click", () => {<br>
+                        if (accordionTitle.classList.contains("active")) {<br>
+                        accordionTitle.classList.remove("active");<br>
+                        } else {<br>
+                        const accordionTitlesWithIsOpen = document.querySelectorAll(".active");<br>
+                        accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {<br>
+                            accordionTitleWithIsOpen.classList.remove("active");<br>
+                        });<br>
+                        accordionTitle.classList.add("active");<br>
+                        }<br>
+                    });<br>
+                    });<br>
                 </Code>
             </article>
             <article class="projects-container">
                 <h2 class="title" id="projects">My projects</h2>
                 <h3> Maket site JSFEPRESCHOOL2022Q4</h3>
                 <p class="projects">
-                    <img class="img-icon" src="images/responsive-web.png"></a>
+                    <img class="img-icon" src="images/responsive-web.png" alt="responsive-web">
                     <a class="link projects-link" href="https://rolling-scopes-school.github.io/margaritabraun-JSFEPRESCHOOL2022Q4/">Plants</a>
                 </p>
                 <p class="projects">
-                    <img class="img-icon" src="images/icon.png"></a>
+                    <img class="img-icon" src="images/icon.png" alt="icon coding">
                     <a class="link projects-link" href="https://margaritabraun.github.io/Project-Access-Point/index.html">
                         Assets Point</a>
                     <a class="link projects-link" href="https://rolling-scopes-school.github.io/margaritabraun-JSFE2023Q1/">
@@ -137,11 +137,11 @@ accordionTitles.forEach((accordionTitle) => {<br>
                 <li class="footer-item">2023</li>
                 <li class="footer-item icon-rss">
                     <a class="link" href="https://rs.school/js/">
-                        <img class="rss" src="https://rs.school/images/rs_school_js.svg"></a>
+                        <img class="rss" src="https://rs.school/images/rs_school_js.svg" alt="icon rss"></a>
                     </li>
             </ul>
         </footer>
     </main>
-</wrapper>
+</div>
 </body>
 </html>
