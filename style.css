@@ -78,7 +78,7 @@ h3 {
 .aside {
     background-color: rgb(212, 0, 255);
     margin-left: 20px;
-    flex: 0 0 30vw;
+    flex: 0 0 27vw;
     /*display: flex;
     
     flex-direction: row;*/
@@ -133,11 +133,11 @@ h3 {
 }
 
 .aside-item::before {
-    content: "\2022"; /* юникод точки */
-    color: orange; /* Менять цвет */
+    content: "\2022";
+    color: orange;
     font-size: 2.7rem;
-    display: inline-block; /* Расстояние между точкой и текстом */
-    width: 1.5rem; /* Задать значение расстояния */
+    display: inline-block;
+    width: 1.5rem;
     position: relative;
     top: 5px;
 }
@@ -153,7 +153,7 @@ h3 {
 }
 
 .information {
-    flex: 0 1 60vw;
+    flex: 0 1 55vw;
     padding: 10px 20px;
 }
 
